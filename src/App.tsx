@@ -1,24 +1,90 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import ProductCard from './components/productCard';
+import './scss/global.scss';
+import { Product } from './types';
+
+const products: Product[] = [
+  {
+    id: 1,
+    title: 'Название',
+    origin: 'Россия',
+    price: 35000,
+    currency: 'RUB',
+    imageUrl: 'https://s00.yaplakal.com/pics/pics_original/9/6/2/19443269.jpg'
+  },
+  {
+    id: 2,
+    title: 'Название',
+    origin: 'Россия',
+    price: 35000,
+    currency: 'RUB',
+    imageUrl: 'https://s00.yaplakal.com/pics/pics_original/9/6/2/19443269.jpg'
+  },
+  {
+    id: 3,
+    title: 'Название',
+    origin: 'Россия',
+    price: 35000,
+    currency: 'RUB',
+    imageUrl: 'https://s00.yaplakal.com/pics/pics_original/9/6/2/19443269.jpg'
+  },
+  {
+    id: 4,
+    title: 'Название',
+    origin: 'Россия',
+    price: 35000,
+    currency: 'RUB',
+    imageUrl: 'https://s00.yaplakal.com/pics/pics_original/9/6/2/19443269.jpg'
+  },
+  {
+    id: 5,
+    title: 'Название',
+    origin: 'Россия',
+    price: 35000,
+    currency: 'RUB',
+    imageUrl: 'https://s00.yaplakal.com/pics/pics_original/9/6/2/19443269.jpg'
+  },
+  {
+    id: 6,
+    title: 'Название',
+    origin: 'Россия',
+    price: 35000,
+    currency: 'RUB',
+    imageUrl: 'https://s00.yaplakal.com/pics/pics_original/9/6/2/19443269.jpg'
+  },
+  {
+    id: 7,
+    title: 'Название',
+    origin: 'Россия',
+    price: 35000,
+    currency: 'RUB',
+    imageUrl: 'https://s00.yaplakal.com/pics/pics_original/9/6/2/19443269.jpg'
+  },
+  {
+    id: 8,
+    title: 'Название',
+    origin: 'Россия',
+    price: 35000,
+    currency: 'RUB',
+    imageUrl: 'https://s00.yaplakal.com/pics/pics_original/9/6/2/19443269.jpg'
+  }
+]
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+        {products.map((e) => {
+          return (
+            <ProductCard
+              title={e.title}
+              origin={e.origin}
+              price={e.price}
+              currency={e.currency}
+              imageUrl={e.imageUrl}
+            />
+          )
+        })}
+      </div>
     </div>
   );
 }
