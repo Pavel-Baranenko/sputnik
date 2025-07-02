@@ -3,7 +3,7 @@ import styles from './index.module.scss'
 
 
 function getRegionalPrice(price: number, currency: string) {
-  return Intl.NumberFormat("ru-RU", { style: "currency", currency: currency }).format(price)
+  return Intl.NumberFormat("ru-RU", { style: "currency", currency: currency }).format(price / 100)
 }
 
 export default function ProductCard({ title, origin, price, currency, imageUrl }: Omit<Product, 'id'>) {
