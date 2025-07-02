@@ -16,7 +16,7 @@ const products: Product[] = [
     title: 'Название',
     origin: 'Россия',
     price: 35000,
-    currency: 'RUB',
+    currency: 'USD',
     imageUrl: 'https://s00.yaplakal.com/pics/pics_original/9/6/2/19443269.jpg'
   },
   {
@@ -32,7 +32,7 @@ const products: Product[] = [
     title: 'Название',
     origin: 'Россия',
     price: 35000,
-    currency: 'RUB',
+    currency: 'USD',
     imageUrl: 'https://s00.yaplakal.com/pics/pics_original/9/6/2/19443269.jpg'
   },
   {
@@ -56,7 +56,7 @@ const products: Product[] = [
     title: 'Название',
     origin: 'Россия',
     price: 35000,
-    currency: 'RUB',
+    currency: 'EUR',
     imageUrl: 'https://s00.yaplakal.com/pics/pics_original/9/6/2/19443269.jpg'
   },
   {
@@ -64,7 +64,7 @@ const products: Product[] = [
     title: 'Название',
     origin: 'Россия',
     price: 35000,
-    currency: 'RUB',
+    currency: 'USD',
     imageUrl: 'https://s00.yaplakal.com/pics/pics_original/9/6/2/19443269.jpg'
   }
 ]

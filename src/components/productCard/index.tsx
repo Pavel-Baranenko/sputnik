@@ -2,14 +2,11 @@ import { Product } from '../../types'
 import styles from './index.module.scss'
 
 
-
-
 function getRegionalPrice(price: number, currency: string) {
-  return Intl.NumberFormat("en-EN", { style: "currency", currency: currency }).format(
+  return Intl.NumberFormat("ru-RU", { style: "currency", currency: currency }).format(
     price,
   )
 }
-
 
 export default function ProductCard({ title, origin, price, currency, imageUrl }: Omit<Product, 'id'>) {
 
